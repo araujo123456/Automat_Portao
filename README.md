@@ -215,17 +215,7 @@ Projetos de eletrônica, IoT e automação residencial.
 
 ---
 
-## 📜 Licença
 
-Este projeto está sob a licença MIT.
-Sinta-se livre para usar, modificar e evoluir.
-
----
-
-## ⭐ Contribuição
-
-Pull requests são bem-vindos!
-Se você tiver ideias ou melhorias, fique à vontade para contribuir.
 
 ---
 
