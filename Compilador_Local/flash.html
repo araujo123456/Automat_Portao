@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instalador Local - Porteiro Eletrônico V2.4</title>
+  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .card {
+      max-width: 680px;
+      width: 100%;
+      background: #1e293b;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      text-align: center;
+    }
+    h1 { margin-top: 0; font-size: 28px; }
+    p, li { line-height: 1.6; color: #cbd5e1; }
+    .info {
+      background: #0f172a;
+      padding: 16px;
+      border-radius: 12px;
+      margin: 20px 0;
+      text-align: left;
+    }
+    code {
+      background: #111827;
+      padding: 2px 6px;
+      border-radius: 6px;
+      color: #e5e7eb;
+    }
+    esp-web-install-button { margin-top: 20px; }
+    .rodape { margin-top: 24px; font-size: 13px; color: #94a3b8; }
+    .warn { color: #fbbf24; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Porteiro Eletrônico V2.4</h1>
+    <p>Instalador local via navegador, sem GitHub Pages.</p>
+
+    <div class="info">
+      <strong>Como usar:</strong>
+      <ol>
+        <li>Extraia a pasta inteira.</li>
+        <li>Execute <code>run-local.bat</code>.</li>
+        <li>Quando abrir o navegador, clique em <strong>Conectar e Gravar</strong>.</li>
+      </ol>
+      <p class="warn"><strong>Importante:</strong> não abra este arquivo com duplo clique direto. Use o <code>run-local.bat</code>, que inicia em <code>http://localhost:8000</code>.</p>
+    </div>
+
+    <div class="info">
+      <strong>Antes de começar:</strong>
+      <ul>
+        <li>Use Google Chrome ou Microsoft Edge</li>
+        <li>Conecte o ESP32 por cabo USB</li>
+        <li>Feche o Monitor Serial e o PlatformIO</li>
+        <li>Se necessário, coloque a placa em modo boot</li>
+      </ul>
+    </div>
+
+    <esp-web-install-button manifest="manifest.json">
+      <button slot="activate">Conectar e Gravar</button>
+    </esp-web-install-button>
+
+    <div class="rodape">Modo local via localhost</div>
+  </div>
+</body>
+</html>
